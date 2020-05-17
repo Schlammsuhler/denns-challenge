@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Challenge
+  p
+    a(href="/profile/1") Profile of Alfonso
+  p
+    a(href="/crypto-price") BTCUSD price
+  hr
+  form(action="/postback", method="get")
+    input(type="number" name="userid" value="1")
+    input(type="number" name="coins" value="1")
+    input(type="number" name="status" value="1")
+    input(type="submit")
